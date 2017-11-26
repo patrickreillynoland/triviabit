@@ -7,4 +7,4 @@ var clientPath = path.join(__dirname, "../client");
 
 app.use(express.static(clientPath));
   
-app.listen(process.env.port || 3000);
+app.listen(process.env.PORT || 5000);
