@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Simple Trivia Service</title>
+    <title>Triviabit</title>
 
     <!-- Bootstrap -->
     <link href="https://bootswatch.com/4/litera/bootstrap.min.css" rel="stylesheet">
@@ -20,15 +20,33 @@
   <body>
       <div class="container">
           <div class="nav nav-default">
-            <h1>Triviabit</h1><small> - for when you just want some trivia.</small>
+            <h1>Triviabit</h1> <h6> - for when you just want some trivia.</h6>
         </div>
         <div class="jumbotron">
             <h4>GET TRIVIA QUESTIONS.</h4>
-            <button class="btn btn-primary" onclick="getQuestions()">Get Questions</button>
+            <button class="btn btn-primary" onclick="getQuestions()">Get Question</button>
         </div>
-        <div class="panel panel-primary">
-            <div class="panel-body" id="Question1"></div>
+        <div class="card text-white bg-primary">
+          <div class="card-body">
+            <blockquote class="card-blockquote">
+              <div id="Question1"></div>
+            </blockquote>
+          </div>
         </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="tag tag-default tag-pill float-xs-right">A.</span><span id="Answer1"></span>
+          </li>
+          <li class="list-group-item">
+            <span class="tag tag-default tag-pill float-xs-right">B.</span><span id="Answer2"></span>
+          </li>
+          <li class="list-group-item">
+            <span class="tag tag-default tag-pill float-xs-right">C.</span><span id="Answer3"></span>
+          </li>
+          <li class="list-group-item">
+            <span class="tag tag-default tag-pill float-xs-right">D.</span><span id="Answer4"></span>
+          </li>
+        </ul>
       </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
