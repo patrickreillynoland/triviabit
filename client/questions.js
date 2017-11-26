@@ -11,7 +11,7 @@ function getQuestions() {
     answer3.innerHTML = "";
     answer4.innerHTML = "";
 
-    axios.get('https://opentdb.com/api.php?amount=1&difficulty=medium&type=multiple')
+    axios.get('https://opentdb.com/api.php?amount=1&type=multiple')
         .then(function(res) {
             question.innerHTML = outputQuestion(res);
             answer1.innerHTML = outputCorrectAnswer(res);
