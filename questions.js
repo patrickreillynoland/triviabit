@@ -30,17 +30,21 @@ function outputQuestion(res) {
 }
 
 function outputCorrectAnswer(res) {
-    return '<h6>(Correct): ' + JSON.stringify(res.data.results[0].correct_answer) + '</h6>';
+    return ' ' + JSON.stringify(res.data.results[0].correct_answer).replace(/\"/g, "");
 }
 
 function outputWrongAnswer1(res) {
-    return '<h6>(Wrong): ' + JSON.stringify(res.data.results[0].incorrect_answers[0]) + '</h6>';
+    return ' ' + JSON.stringify(res.data.results[0].incorrect_answers[0]).replace(/\"/g, "");
 }
 
 function outputWrongAnswer2(res) {
-    return '<h6>(Wrong): ' + JSON.stringify(res.data.results[0].incorrect_answers[1]) + '</h6>';
+    return ' ' + JSON.stringify(res.data.results[0].incorrect_answers[1]).replace(/\"/g, "");
 }
 
 function outputWrongAnswer3(res) {
-    return '<h6>(Wrong): ' + JSON.stringify(res.data.results[0].incorrect_answers[2]) + '</h6>';
+    return ' ' + JSON.stringify(res.data.results[0].incorrect_answers[2]).replace(/\"/g, "");
+}
+
+function showAnswer() {
+    
 }

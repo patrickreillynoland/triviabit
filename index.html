@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="https://bootswatch.com/4/litera/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,11 +21,14 @@
   <body>
       <div class="container">
           <div class="nav nav-default">
-            <h1>Triviabit</h1> <h6> - for when you just want some trivia.</h6>
+            <h1>Triviabit</h1> <h6 id="subtitle">For when you just want some trivia.</h6>
         </div>
         <div class="jumbotron">
             <h4>GET TRIVIA QUESTIONS.</h4>
-            <button class="btn btn-primary" onclick="getQuestions()">Get Question</button>
+            <div class="list-inline">
+              <button class="btn btn-primary" onclick="getQuestions()">Get Question</button>
+              <button class="btn btn-success" onclick="showAnswer()">Show Answer</button>
+            </div>
         </div>
         <div class="card text-white bg-primary">
           <div class="card-body">
@@ -35,16 +39,16 @@
         </div>
         <ul class="list-group">
           <li class="list-group-item">
-            <span class="tag tag-default tag-pill float-xs-right">A.</span><span id="Answer1"></span>
+            <span class="tag tag-default tag-pill float-xs-right">A.</span><h6 class="answer" id="Answer1"></h6>
           </li>
           <li class="list-group-item">
-            <span class="tag tag-default tag-pill float-xs-right">B.</span><span id="Answer2"></span>
+            <span class="tag tag-default tag-pill float-xs-right">B.</span><h6 class="answer" id="Answer2"></h6>
           </li>
           <li class="list-group-item">
-            <span class="tag tag-default tag-pill float-xs-right">C.</span><span id="Answer3"></span>
+            <span class="tag tag-default tag-pill float-xs-right">C.</span><h6 class="answer" id="Answer3"></h6>
           </li>
           <li class="list-group-item">
-            <span class="tag tag-default tag-pill float-xs-right">D.</span><span id="Answer4"></span>
+            <span class="tag tag-default tag-pill float-xs-right">D.</span><h6 class="answer" id="Answer4"></h6>
           </li>
         </ul>
       </div>
