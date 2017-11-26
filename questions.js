@@ -30,7 +30,7 @@ function outputQuestion(res) {
 }
 
 function outputCorrectAnswer(res) {
-    return ' ' + JSON.stringify(res.data.results[0].correct_answer).replace(/\"/g, "");
+    return ' <div class="answer" id="correctAnswer">' + JSON.stringify(res.data.results[0].correct_answer).replace(/\"/g, "") + '</div>';
 }
 
 function outputWrongAnswer1(res) {
@@ -46,5 +46,6 @@ function outputWrongAnswer3(res) {
 }
 
 function showAnswer() {
-    
+    var rightAnswer = document.getElementById('correctAnswer');
+    rightAnswer.className += " correct";
 }

@@ -1,8 +1,12 @@
-#subtitle {
-    margin-left: .5em;
-    margin-top: 1.2em;
+#title {
+    margin-bottom: 0;
 }
 
 .answer {
     display: inline;
+}
+
+.correct {
+    font-weight: 900;
+    background: lightgreen;
 }
