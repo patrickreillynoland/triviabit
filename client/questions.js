@@ -53,6 +53,11 @@ function getWrongAnswer3(res) {
     return ' '+ JSON.stringify(res.data.results[0].incorrect_answers[2]);
 }
 
+// Outputs
+function outputQuestion(res) {
+    return '<h4>' + JSON.stringify(res.data.results[0].question) + '</h4>';
+}
+
 function showAnswer() {
     var rightAnswer = document.getElementById('correctAnswer');
     rightAnswer.className += " correct";
