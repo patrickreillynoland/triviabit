@@ -2,5 +2,4 @@
 
 A super simple trivia service. Press the button, get a question.
 
-###TO-DO:
-1. Shuffle
+Available at [triviabit.com](http://www.triviabit.com)
