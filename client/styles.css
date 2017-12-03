@@ -2,6 +2,10 @@
     margin-bottom: 0;
 }
 
+.card {
+    min-height: 5em;
+}
+
 .answer {
     display: inline;
 }
@@ -9,4 +13,10 @@
 .correct {
     font-weight: 900;
     background: lightgreen;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        min-height: 10em;
+    }
 }
