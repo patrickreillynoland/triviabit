@@ -2,7 +2,7 @@
   "name": "sts2",
   "version": "1.0.0",
   "description": "A Simple Trivia Service",
-  "main": "server/.js",
+  "main": "server/index.js",
   "dependencies": {
     "axios": "^0.17.1",
     "express": "^4.16.2"
